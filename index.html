@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/barnilsarma/NFT-preview-card/blob/main/favicon-32x32.png?raw=true">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+body{background-color:hsl(217, 54%, 11%);font-family: 'Outfit', sans-serif;}
+main{align-items:center;justify-content:space-around;display:flex;flex-direction:column;margin-left:20%;margin-top:10%;}
+#line-1{font-weight:600;position:relative;margin-left:80px;color:hsl(0, 0%, 100%);transition-duration:0.3s;text-align:left;font-size:25px;}
+#line-1:hover{color:hsl(178, 100%, 50%);transition-duration:0.3s;}
+#line-2{font-weight:300;position:relative;margin-left:80px;color:hsl(215, 51%, 70%);text-align:left;font-size:18px;}
+.line-3{position:relative;margin-left:0px;display:flex;flex-direction:row;justify-content:space-around;font-size:18px;width:200px;}
+#price{font-weight:600;position:relative;left:-35px;color:hsl(178, 100%, 50%);}
+#time{font-weight:300;position:relative;right:-55px;color:hsl(215, 51%, 70%);} 
+#creator{font-weight:300;color:hsl(215, 51%, 70%);text-align:left;position:relative;margin-left:80px;font-size:18px;}
+#creator a{color:hsl(0, 0%, 100%);transition-duration:0.3s;}
+#creator a:hover{color:hsl(178, 100%, 50%);transition-duration:0.3s;}
+#img-holder{border-radius:10px;position:relative;background-image:url("images/image-equilibrium.jpg");width:260px;height:260px;background-size:300px 320px;background-position:center;}
+#view{border-radius:10px;transition-duration:0.3s;position:relative;top:0px;left:0px;background-color:hsla(178, 100%, 50%,0);text-align:center;height:1px;padding:130px;}
+#view #eye{opacity:0;transition-duration:0.3s;position:relative;left:-20px;top:-20px;}
+#view:hover{background-color:hsla(178, 100%, 50%,0.5);transition-duration:0.3s;}
+#view:hover #eye{opacity:1;transition-duration:0.3s;}
+#sep{color:white;background-color:hsl(215, 32%, 27%);width:300px;height:2px;}
+#creator-pic{height:40px;width:40px;border:2px solid white;border-radius:100px;}
+.card{height:550px;border-radius:20px;text-align:center;background-color:hsl(216, 50%, 16%);margin-left:-50px;margin-right:10px;}
+   .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+@media only screen and (min-width:600px){
+.card{position:relative;left:-60px;top:-60px;width:350px;}
+#line-1{position:relative;left:-30px;}
+#line-2{position:relative;left:-30px;}
+#price{position:relative;left:-30px;}
+#creator{position:relative;left:-30px;}
+}
+  </style>
+</head>
+<body>
+<main>
+<div class="card"><br><center>
+<div id="img-holder"><div id="view"><img id="eye" src="https://raw.githubusercontent.com/barnilsarma/NFT-preview-card/7ddfa8d31e0c94654a1d45bd901e4b1beb0f9937/icon-view.svg" alt="View"></div>
+</div><br>
+<div id="line-1">  Equilibrium #3429</div><br>
+
+<div id="line-2">  Our Equilibrium collection promotes balance and calm.</div><br>
+
+ <div class="line-3"> <div id="price"><img src="https://raw.githubusercontent.com/barnilsarma/NFT-preview-card/7ddfa8d31e0c94654a1d45bd901e4b1beb0f9937/icon-ethereum.svg" alt="etherium">     0.041 ETH</div><br>
+  <div id="time"><img src="https://raw.githubusercontent.com/barnilsarma/NFT-preview-card/7ddfa8d31e0c94654a1d45bd901e4b1beb0f9937/icon-clock.svg">3 days left</div></div>
+ <br> <div id="sep"></div><br>
+  <div id="creator"><img src="https://github.com/barnilsarma/NFT-preview-card/blob/main/image-avatar.png?raw=true" id="creator-pic"><div style="position:absolute;top:10px;left:60px;">Creation of <a>Jules Wyvern</a></div></div>
+</center>
+</div>
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/barnilsarma">Barnil Sarma</a>.
+  </div>
+</body>
+</html>
